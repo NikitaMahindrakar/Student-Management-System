@@ -1,0 +1,31 @@
+<h1 style="text-align: center;margin-top: 20px;margin-bottom:20px ;font-family:'Times New Roman', Times, serif;color:rgb(125, 10, 10);">Result</h1>
+<hr>
+<ng-container *ngIf="mark">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Roll No</th>
+                <th scope="col">English</th>
+                <th scope="col">Hindi</th>
+                <th scope="col">Maths</th>
+                <th scope="col">Science</th>
+                <th scope="col">Social Science</th>
+                <th scope="col">Posted By</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let marks of mark">
+                <th scope="row">{{marks.name}}</th>
+                <td>{{marks.rollno}}</td>
+                <td>{{marks.english}}</td>
+                <td>{{marks.hindi}}</td>
+                <td>{{marks.maths}}</td>
+                <td>{{marks.science}}</td>
+                <td>{{marks.social}}</td>
+                <td>{{marks.postedBy}}</td> 
+            </tr>
+        </tbody>
+    </table>
+</ng-container>

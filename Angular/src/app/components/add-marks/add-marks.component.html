@@ -1,0 +1,58 @@
+<form style="width: 400px; margin-left: 450px; margin-top: 20px;" [formGroup]="validateForm">
+    <div class="row mb-3">
+        <label for="inputName3" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+            <h1>Add Marks</h1>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="name" class="col-sm-3 col-form-label">Name:</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="name" formControlName="name">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="rollno" class="col-sm-3 col-form-label">Roll No: </label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="rollno" formControlName="rollno">
+        </div>
+    </div>
+    <div class="row mb-3">
+    <label for="subject" class="col-sm-3 col-form-label">Subject</label>
+    <label for="marks1" class="col-sm-9 col-form-label">Marks</label>
+    </div>
+
+    <div class="row mb-3">
+    <label for="english" class="col-sm-3 col-form-label">English </label>
+      <div class="col-sm-9">
+        <input type="number" class="form-control" id="english" formControlName="english">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+    <label for="hindi" class="col-sm-3 col-form-label">Hindi </label>
+    <div class="col-sm-9">
+        <input type="number" class="form-control" id="hindi" formControlName="hindi">
+    </div>
+    </div>
+    <div class="row mb-3">
+    <label for="maths" class="col-sm-3 col-form-label">Maths </label>
+    <div class="col-sm-9">
+        <input type="number" class="form-control" id="maths" formControlName="maths">
+    </div>
+    </div>
+    <div class="row mb-3">
+    <label for="science" class="col-sm-3 col-form-label">Science </label>
+    <div class="col-sm-9">
+        <input type="number" class="form-control" id="science" formControlName="science">
+    </div>
+    </div>
+
+    <div class="row mb-3">
+    <label for="social" class="col-sm-3 col-form-label">Social Science </label>
+    <div class="col-sm-9">
+        <input type="number" class="form-control" id="social" formControlName="social">
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="addMark()">Add</button>
+</form>
